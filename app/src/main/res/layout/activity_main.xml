@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DED9E2"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="392dp"
+        android:layout_height="576dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:orientation="horizontal"
+            android:paddingLeft="50px"
+            android:paddingRight="50px">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Gimnasios"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Staff"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/add_user_button_menu"
+                android:layout_width="400px"
+                android:layout_height="150px"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:background="@drawable/buttonshape"
+                android:onClick="viewGym"
+                android:src="@drawable/gymicono"
+                android:text="Ver Staff" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/add_staff_button_menu"
+                android:layout_width="400px"
+                android:layout_height="150px"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:background="@drawable/buttonshape"
+                android:onClick="viewStaff"
+                android:src="@drawable/usuarioicono"
+                android:text="Ver Staff" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="63dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="50px"
+            android:paddingRight="50px">
+
+            <TextView
+                android:id="@+id/editTextTextPersonName3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Clientes"
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/editTextTextPersonName2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Actividades"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/add_client_button_menu"
+                android:layout_width="400px"
+                android:layout_height="150px"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:background="@drawable/buttonshape"
+                android:onClick="viewClient"
+                android:src="@drawable/clienteicono"
+                android:text="Ver Staff" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/add_activity_button_menu"
+                android:layout_width="400px"
+                android:layout_height="150px"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:background="@drawable/buttonshape"
+                android:onClick="viewActivity"
+                android:src="@drawable/actividadicono"
+                android:text="Ver Staff" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="39dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Registro de Clientes en Actividades"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:textAlignment="center">
+
+            <ImageButton
+                android:id="@+id/add_Activity_Client_button_menu"
+                android:layout_width="900px"
+                android:layout_height="150px"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:background="@drawable/buttonshape"
+                android:onClick="viewActivity_Client"
+                android:src="@drawable/registroicono"
+                android:text="Ver Staff" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">FitStagerApplication</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="google_maps_key">AIzaSyAS-E1TdrFb9UU_Su4gaT7ZPcbypCwUsCE</string>
+    <string name="acitivity_textView">Actividad</string>
+    <string name="client_textView">Cliente</string>
+    <string name="gym_textView">Gimnasio</string>
+    <string name="name">Nombre</string>
+    <string name="room">Sala</string>
+    <string name="style">Estilo</string>
+    <string name="difficulty">Dificultad</string>
+    <string name="date">Fecha</string>
+    <string name="surname">Apellidos</string>
+    <string name="dni">DNI</string>
+    <string name="phone">Teléfono</string>
+    <string name="city">Ciudad</string>
+    <string name="street">Calle</string>
+    <string name="horary">Horario</string>
+    <string name="gym">Gimnasio</string>
+    <string name="client">Cliente</string>
+    <string name="staff">Staff</string>
+    <string name="activity">Actividad</string>
+    <string name="no_capital">NO</string>
+    <string name="yes_capital">SI</string>
+    <string name="are_you_sure_delete">¿Estas seguro de querer borrarlo?</string>
+
+</resources>
