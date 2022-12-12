@@ -53,12 +53,12 @@ public class AddClientModel implements AddClientContract.Model {
         clientCall.enqueue(new Callback<Client>() {
             @Override
             public void onResponse(Call<Client> call, Response<Client> response) {
-                listener.onAddClientSuccess("Ordenador añadido con éxito");
+                listener.onAddClientSuccess("Cliente añadido con éxito");
             }
 
             @Override
             public void onFailure(Call<Client> call, Throwable t) {
-                listener.onAddClientError("No se ha podido añadir el staff");
+                listener.onAddClientError("No se ha podido añadir el cliente");
                 t.printStackTrace();
             }
         });
@@ -82,12 +82,12 @@ public class AddClientModel implements AddClientContract.Model {
         clientCall.enqueue(new Callback<Client>() {
             @Override
             public void onResponse(Call<Client> call, Response<Client> response) {
-                listener.onModifyClientSuccess("Ordenador modificado con éxito");
+                listener.onModifyClientSuccess("Cliente modificado con éxito");
             }
 
             @Override
             public void onFailure(Call<Client> call, Throwable t) {
-                listener.onModifyClientError("No se ha podido modificar el ordenador");
+                listener.onModifyClientError("No se ha podido modificar el Cliente");
                 t.printStackTrace();
             }
         });

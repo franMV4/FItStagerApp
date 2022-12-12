@@ -57,12 +57,12 @@ public class AddActivityModel implements AddActivityContract.Model {
         activityCall.enqueue(new Callback<Activitie>() {
             @Override
             public void onResponse(Call<Activitie> call, Response<Activitie> response) {
-                listener.onAddActivitySuccess("Ordenador añadido con éxito");
+                listener.onAddActivitySuccess("Actividad añadida con éxito");
             }
 
             @Override
             public void onFailure(Call<Activitie> call, Throwable t) {
-                listener.onAddActivityError("No se ha podido añadir el staff");
+                listener.onAddActivityError("No se ha podido añadir la actividad");
                 t.printStackTrace();
             }
         });
@@ -88,12 +88,12 @@ public class AddActivityModel implements AddActivityContract.Model {
         activityCall.enqueue(new Callback<Activitie>() {
             @Override
             public void onResponse(Call<Activitie> call, Response<Activitie> response) {
-                listener.onModifyActivitySuccess("Ordenador modificado con éxito");
+                listener.onModifyActivitySuccess("Actividad modificada con éxito");
             }
 
             @Override
             public void onFailure(Call<Activitie> call, Throwable t) {
-                listener.onModifyActivityError("No se ha podido modificar el ordenador");
+                listener.onModifyActivityError("No se ha podido modificar la actividad");
                 t.printStackTrace();
             }
         });

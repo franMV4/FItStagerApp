@@ -105,12 +105,12 @@ public class GymListModel implements GymListContract.Model {
         gymCall.enqueue(new Callback<Void>() {
             @Override
             public void onResponse(Call<Void> call, Response<Void> response) {
-                listener.onDeleteGymSuccess("Ordenador eliminado correctamente");
+                listener.onDeleteGymSuccess("Gimnasio eliminado correctamente");
             }
 
             @Override
             public void onFailure(Call<Void> call, Throwable t) {
-                listener.onDeleteGymError("No se ha podido eliminar el ordenador");
+                listener.onDeleteGymError("No se ha podido eliminar el gimnasio");
                 t.printStackTrace();
             }
         });
