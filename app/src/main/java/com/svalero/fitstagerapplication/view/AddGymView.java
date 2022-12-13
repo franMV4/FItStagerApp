@@ -138,6 +138,7 @@ public class AddGymView extends AppCompatActivity implements AddGymContract.View
         gym.setStreet(etStreet.getText().toString().trim());
         gym.setHorary(etHorary.getText().toString().trim());
         gym.setGymImage(Base64.getEncoder().encodeToString(ImageUtils.fromImageViewToByteArray(gymImage)));
+
         presenter.addOrModifyGym(gym, modifyGym);
 
 
@@ -187,15 +188,7 @@ public class AddGymView extends AppCompatActivity implements AddGymContract.View
     }
 
 
-    @Override
-    public void onMapClick(@NonNull LatLng latLng) {
-        if (marker != null)     // Si el marker NO está vacio,
-            marker.remove();    // lo borramos para asignarle las coordenadas del click
-        marker = map.addMarker(new MarkerOptions().position(latLng));
-        gym.setLatitude((float) latLng.latitude);    // Asignamos las coordenadas del marker a la
-        gym.setLongitude((float) latLng.longitude);   // dirección del user
 
-    }
 
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
@@ -208,5 +201,15 @@ public class AddGymView extends AppCompatActivity implements AddGymContract.View
                     (new LatLng((gym.getLatitude() - 0.06), gym.getLongitude())));
             map.moveCamera(CameraUpdateFactory.zoomTo(11));
         }
+    }
+
+    @Override
+    public void onMapClick(@NonNull LatLng latLng) {
+        if (marker != null)     // Si el marker NO está vacio,
+            marker.remove();    // lo borramos para asignarle las coordenadas del click
+        marker = map.addMarker(new MarkerOptions().position(latLng));
+        gym.setLatitude((float) latLng.latitude);    // Asignamos las coordenadas del marker a la
+        gym.setLongitude((float) latLng.longitude);   // dirección del user
+
     }
 }

@@ -53,12 +53,12 @@ public class AddActivity_ClientModel implements AddActivity_ClientContract.Model
         activity_clientCall.enqueue(new Callback<Activity_Client>() {
             @Override
             public void onResponse(Call<Activity_Client> call, Response<Activity_Client> response) {
-                listener.onAddActivity_ClientSuccess("Ordenador añadido con éxito");
+                listener.onAddActivity_ClientSuccess("Registro añadido con éxito");
             }
 
             @Override
             public void onFailure(Call<Activity_Client> call, Throwable t) {
-                listener.onAddActivity_ClientError("No se ha podido añadir el staff");
+                listener.onAddActivity_ClientError("No se ha podido añadir el registro");
                 t.printStackTrace();
             }
         });
@@ -78,12 +78,12 @@ public class AddActivity_ClientModel implements AddActivity_ClientContract.Model
         activity_clientCall.enqueue(new Callback<Activity_Client>() {
             @Override
             public void onResponse(Call<Activity_Client> call, Response<Activity_Client> response) {
-                listener.onModifyActivity_ClientSuccess("Ordenador modificado con éxito");
+                listener.onModifyActivity_ClientSuccess("Registro modificado con éxito");
             }
 
             @Override
             public void onFailure(Call<Activity_Client> call, Throwable t) {
-                listener.onModifyActivity_ClientError("No se ha podido modificar el ordenador");
+                listener.onModifyActivity_ClientError("No se ha podido modificar el registro");
                 t.printStackTrace();
             }
         });

@@ -88,7 +88,8 @@ public class DetailFragment extends Fragment {
                     if (getArguments().getByteArray("staff_image") != null)
                         imageView.setImageBitmap(ImageUtils.getBitmap(getArguments().getByteArray("staff_image")));
                     textView1.setText(getArguments().getString("name") + " " + getArguments().getString("surname"));
-                    textView2.setText(getArguments().getString("dni") + " || " + getArguments().getString("phone"));
+                    textView2.setText(getArguments().getString("dni"));
+                    textView3.setText(getArguments().getString("phone"));
                 }
 
                 break;
@@ -98,7 +99,8 @@ public class DetailFragment extends Fragment {
 
                         imageView.setImageBitmap(ImageUtils.getBitmap(getArguments().getByteArray("gym_image")));
                     textView1.setText(getArguments().getString("name") + " || " + getArguments().getString("city"));
-                    textView2.setText(getArguments().getString("street") + " || " + getArguments().getString("horary"));
+                    textView2.setText(getArguments().getString("street"));
+                    textView3.setText(getArguments().getString("horary"));
                 }
                 break;
 
@@ -107,7 +109,8 @@ public class DetailFragment extends Fragment {
                     if (getArguments().getByteArray("client_image") != null)
                         imageView.setImageBitmap(ImageUtils.getBitmap(getArguments().getByteArray("client_image")));
                     textView1.setText(getArguments().getString("name") + " " + getArguments().getString("surname"));
-                    textView2.setText(getArguments().getString("dni") + " || " + getArguments().getString("phone"));
+                    textView2.setText(getArguments().getString("dni"));
+                    textView3.setText(getArguments().getString("phone"));
                 }
                 break;
             case VIEW_ACTIVITY_ACTIVITY:
@@ -115,7 +118,8 @@ public class DetailFragment extends Fragment {
                     if (getArguments().getByteArray("activity_image") != null)
                         imageView.setImageBitmap(ImageUtils.getBitmap(getArguments().getByteArray("activity_image")));
                     textView1.setText(getArguments().getString("name") + " " + getArguments().getString("difficulty"));
-                    textView2.setText(getArguments().getString("room") + " || " + getArguments().getString("style"));
+                    textView2.setText(getArguments().getString("style"));
+                    textView3.setText(getArguments().getString("room")+ " || " + getArguments().getString("date"));
                 }
                 break;
         }   // End switch

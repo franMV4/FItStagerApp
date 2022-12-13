@@ -48,12 +48,12 @@ public class AddGymModel implements AddGymContract.Model {
         gymCall.enqueue(new Callback<Gym>() {
             @Override
             public void onResponse(Call<Gym> call, Response<Gym> response) {
-                listener.onAddGymSuccess("Ordenador añadido con éxito");
+                listener.onAddGymSuccess("Gimnasio añadido con éxito");
             }
 
             @Override
             public void onFailure(Call<Gym> call, Throwable t) {
-                listener.onAddGymError("No se ha podido añadir el staff");
+                listener.onAddGymError("No se ha podido añadir el gimnasio");
                 t.printStackTrace();
             }
         });
@@ -77,12 +77,12 @@ public class AddGymModel implements AddGymContract.Model {
         staffCall.enqueue(new Callback<Gym>() {
             @Override
             public void onResponse(Call<Gym> call, Response<Gym> response) {
-                listener.onModifyGymSuccess("Ordenador modificado con éxito");
+                listener.onModifyGymSuccess("Gimnasio modificado con éxito");
             }
 
             @Override
             public void onFailure(Call<Gym> call, Throwable t) {
-                listener.onModifyGymError("No se ha podido modificar el ordenador");
+                listener.onModifyGymError("No se ha podido modificar el gimnasio");
                 t.printStackTrace();
             }
         });

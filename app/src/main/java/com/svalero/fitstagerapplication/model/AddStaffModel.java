@@ -50,7 +50,7 @@ public class AddStaffModel implements AddStaffContract.Model {
         staffCall.enqueue(new Callback<Staff>() {
             @Override
             public void onResponse(Call<Staff> call, Response<Staff> response) {
-                listener.onAddStaffSuccess("Ordenador añadido con éxito");
+                listener.onAddStaffSuccess("Staff añadido con éxito");
             }
 
             @Override
@@ -79,12 +79,12 @@ public class AddStaffModel implements AddStaffContract.Model {
         staffCall.enqueue(new Callback<Staff>() {
             @Override
             public void onResponse(Call<Staff> call, Response<Staff> response) {
-                listener.onModifyStaffSuccess("Ordenador modificado con éxito");
+                listener.onModifyStaffSuccess("Staff modificado con éxito");
             }
 
             @Override
             public void onFailure(Call<Staff> call, Throwable t) {
-                listener.onModifyStaffError("No se ha podido modificar el ordenador");
+                listener.onModifyStaffError("No se ha podido modificar el staff");
                 t.printStackTrace();
             }
         });

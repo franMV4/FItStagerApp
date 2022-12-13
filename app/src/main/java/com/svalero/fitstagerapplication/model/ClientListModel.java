@@ -71,12 +71,12 @@ public class ClientListModel implements ClientListContract.Model {
         clientCall.enqueue(new Callback<Void>() {
             @Override
             public void onResponse(Call<Void> call, Response<Void> response) {
-                listener.onDeleteClientSuccess("Ordenador eliminado correctamente");
+                listener.onDeleteClientSuccess("Cliente eliminado correctamente");
             }
 
             @Override
             public void onFailure(Call<Void> call, Throwable t) {
-                listener.onDeleteClientError("No se ha podido eliminar el ordenador");
+                listener.onDeleteClientError("No se ha podido eliminar el cliente");
                 t.printStackTrace();
             }
         });

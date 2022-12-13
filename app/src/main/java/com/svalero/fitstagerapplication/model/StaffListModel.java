@@ -70,12 +70,12 @@ public class StaffListModel implements StaffListContract.Model {
         staffCall.enqueue(new Callback<Void>() {
             @Override
             public void onResponse(Call<Void> call, Response<Void> response) {
-                listener.onDeleteStaffSuccess("Ordenador eliminado correctamente");
+                listener.onDeleteStaffSuccess("Staff eliminado correctamente");
             }
 
             @Override
             public void onFailure(Call<Void> call, Throwable t) {
-                listener.onDeleteStaffError("No se ha podido eliminar el ordenador");
+                listener.onDeleteStaffError("No se ha podido eliminar el staff");
                 t.printStackTrace();
             }
         });

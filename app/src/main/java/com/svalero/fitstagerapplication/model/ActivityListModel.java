@@ -72,12 +72,12 @@ public class ActivityListModel implements ActivityListContract.Model {
         activityCall.enqueue(new Callback<Void>() {
             @Override
             public void onResponse(Call<Void> call, Response<Void> response) {
-                listener.onDeleteActivitySuccess("Ordenador eliminado correctamente");
+                listener.onDeleteActivitySuccess("Actividad eliminada correctamente");
             }
 
             @Override
             public void onFailure(Call<Void> call, Throwable t) {
-                listener.onDeleteActivityError("No se ha podido eliminar el ordenador");
+                listener.onDeleteActivityError("No se ha podido eliminar la actividad");
                 t.printStackTrace();
             }
         });

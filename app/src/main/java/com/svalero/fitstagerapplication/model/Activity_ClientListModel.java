@@ -71,12 +71,12 @@ public class Activity_ClientListModel implements Activity_ClientListContract.Mod
         activity_clientCall.enqueue(new Callback<Void>() {
             @Override
             public void onResponse(Call<Void> call, Response<Void> response) {
-                listener.onDeleteActivity_ClientSuccess("Ordenador eliminado correctamente");
+                listener.onDeleteActivity_ClientSuccess("Registro eliminada correctamente");
             }
 
             @Override
             public void onFailure(Call<Void> call, Throwable t) {
-                listener.onDeleteActivity_ClientError("No se ha podido eliminar el ordenador");
+                listener.onDeleteActivity_ClientError("No se ha podido eliminar el registro");
                 t.printStackTrace();
             }
         });

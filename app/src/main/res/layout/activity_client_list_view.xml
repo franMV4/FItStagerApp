@@ -96,6 +96,7 @@
         android:layout_marginBottom="24dp"
         android:clickable="true"
         android:onClick="addClient"
+        app:backgroundTint="#80A1D4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@android:drawable/ic_menu_add"
